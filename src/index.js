@@ -2,31 +2,19 @@
   
 // }
 
-// const reverseNum = n => parseFloat(n.toString().split('').reverse().join('')) * Math.sign(n)
-// module.exports = function reverseNum(n) {
-//     return (
-//         parseFloat(
-//             n
-//                 .toString()
-//                 .split('')
-//                 .reverse()
-//                 .join('')
-//         ) * Math.sign(n)
-//     )
-// }
-// return reverseNum()
-
-const reversedNum = num => parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num)
-module.exports = function reversedNum(num) {
-    return (
+const reversedNum = num => parseFloat(num.toString().split().reverse().join()) * Math.sign(Math.abs(num))
+ module.exports = function reversedNum(num) {
+     return (
         parseFloat(
-            num
-                .toString()
+                num
+                 .toString()
                 .split('')
                 .reverse()
                 .join('')
-        ) * Math.sign(num)
-    )
-    
+         ) * Math.sign(Math.abs(num)) 
+     )
+
 }
 return reversedNum
+
+
